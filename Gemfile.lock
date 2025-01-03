@@ -27,6 +27,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    ffi (1.17.1-arm-linux-gnu)
+    ffi (1.17.1-arm-linux-musl)
     ffi (1.17.1-x64-mingw-ucrt)
     ffi (1.17.1-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
@@ -79,6 +81,10 @@ GEM
     logger (1.6.4)
     mercenary (0.4.0)
     minitest (5.25.4)
+    nokogiri (1.18.1-arm-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.18.1-arm-linux-musl)
+      racc (~> 1.4)
     nokogiri (1.18.1-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.18.1-x86_64-linux-gnu)
@@ -94,6 +100,10 @@ GEM
     rexml (3.4.0)
     rouge (4.5.1)
     safe_yaml (1.0.5)
+    sass-embedded (1.83.0-arm-linux-gnueabihf)
+      google-protobuf (~> 4.28)
+    sass-embedded (1.83.0-arm-linux-musleabihf)
+      google-protobuf (~> 4.28)
     sass-embedded (1.83.0-x64-mingw-ucrt)
       google-protobuf (~> 4.28)
     sass-embedded (1.83.0-x86_64-linux-gnu)
@@ -108,6 +118,10 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
+  arm-linux-gnu
+  arm-linux-gnueabihf
+  arm-linux-musl
+  arm-linux-musleabihf
   x64-mingw-ucrt
   x86_64-linux
 
