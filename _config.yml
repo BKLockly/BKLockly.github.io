@@ -1,7 +1,7 @@
 # Configurations
 title:            Karlin
 longtitle:        Karlin C2
-author:           HE Tao
+author:           Lockly
 email:            bk@gmail.com
 description: >
   Build Jekyll site with the GitBook style.
@@ -19,10 +19,10 @@ remote_theme: sighingnow/jekyll-gitbook
 toc:
   enabled: true
   h_min:   1
-  h_max:   3
+  h_max:   4
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/gitbook/images/favicon.ico
+favicon_path:     /assets/imgs/icon.ico
 
 # markdown render engine.
 markdown:         kramdown
@@ -46,9 +46,6 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 # Disqus comments
 # disqushandler:            sighingnow
 
-exclude:
-  - _drafts
-
 collections:
   pages:
     output: true
@@ -62,7 +59,7 @@ ordered_collections:
   - pages
   - others
 
-page_width: 800px
+page_width: 1100px
 
 destination:      ./_site
 incremental:      false

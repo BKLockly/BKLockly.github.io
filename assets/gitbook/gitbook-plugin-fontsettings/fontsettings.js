@@ -14,11 +14,11 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             text: 'White',
             id: 0
         },
-        {
-            config: 'sepia',
-            text: 'Sepia',
-            id: 1
-        },
+        // {
+        //     config: 'sepia',
+        //     text: 'Sepia',
+        //     id: 1
+        // },
         {
             config: 'night',
             text: 'Night',
@@ -173,8 +173,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         // Instantiate font state object
         fontState = gitbook.storage.get('fontState', {
             size:   config.size || 2,
-            family: configFamily,
-            theme:  configTheme
+            family: 1,
+            theme:  2
         });
 
         update();
