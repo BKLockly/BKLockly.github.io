@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Home
-cover: http://127.0.0.1:4000/home/assets/banner.png
+title: Wiki
+cover: http://localhost:4000/wiki/assets/imgs/banner.png
 permalink: /
 ---
 
