@@ -1,7 +1,7 @@
 ---
 title: Road Map
-author: Tao He
-date: 2022-02-04
+author: Lockly
+date: 2025-01-07
 category: Jekyll
 layout: post
 ---
@@ -28,9 +28,9 @@ Agent
 * [ ] unmanaged powershell
 * [X] 自定义module热加载，必须符合规范，将编译成dll反射执行(未装载)
     * [X] go
-    * [X] c#
+    * [X] c/c++
 * [ ] memfd(仅linux)
-* [ ] inline-execute(测试)
+* [X] inline-execute(测试)
   * [X] ipconfig
   * [X] env
   * [X] arp
@@ -44,13 +44,13 @@ Agent
   * [X] schtaskenum
   * [X] resources
   * [X] probe
-  * [ ] self_delete(引发panic,自实现)
   * [X] portscan
   * [X] get_clipboard(只获取一行)
   * [X] sc_enum(乱码)
   * [X] windowlist(乱码已修复)
   * [X] whoami(会超时以及乱码已修复)
 * [X] 屏幕截图(screenshot)
+* [X] Hashdump
 * [ ] OPSEC
     * [ ] 堆栈混淆(StackSpoofer)
     * [ ] UDRL
@@ -65,6 +65,7 @@ Agent
   * [X] 关机
   * [X] 重启
   * [X] 锁屏
+  * [X] 自删除
 * 进程操作
   * [ ] 进程迁移(migrate),参考[meetC2](https://github.com/iammaguire/MeetC2)
   * [X] 浏览，终止进程
