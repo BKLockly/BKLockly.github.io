@@ -56,6 +56,12 @@
             {% if site.ordered_collections %}
                 {% for label in site.ordered_collections %}
                     {% assign collection = site.collections | where: "label", label | first %}
+                    {% if collection.label == "posts" %}
+                        <li class="collection-header">USAGES</li>
+                    {% else %}
+                         <li class="collection-header">{{ collection.label }}</li>
+                    {% endif %}
+
                     <!-- <p>{{ collection.label }}</p> -->
                     {% if collection.output %}
                         {% if collection.label == "posts" %}
@@ -88,6 +94,7 @@
                 {% endfor %}
             {% else %}
                 {% for collection in site.collections %}
+                    <li class="collection-header">{{ collection.label }}</li>
                     <!-- <p>{{ collection.label }}</p> -->
                     {% if collection.output %}
                         {% if collection.label == "posts" %}

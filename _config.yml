@@ -4,7 +4,7 @@ longtitle:        Karlin C2
 author:           Lockly
 email:            bk@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  The Wiki for Karlin C2.
 
 version:          1.0
 gitbook_version:  3.2.3
@@ -22,7 +22,7 @@ toc:
   h_max:   4
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/imgs/icon.ico
+# favicon_path:     /assets/imgs/icon.ico
 
 # markdown render engine.
 markdown:         kramdown
@@ -52,9 +52,9 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
-  # others:
-  #   output: true
-  #   permalink: /:collection/:path/
+  others:
+    output: true
+    permalink: /:collection/:path/
 
 ordered_collections:
   - posts

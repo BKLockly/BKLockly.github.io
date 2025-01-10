@@ -71,8 +71,8 @@
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 1px;
+    height: 2px;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -138,7 +138,7 @@
 
 #book-search-input {
     display: flex;
-    align-items: center；
+    align-items: center;
 }
 #book-search-input-link {
     display: none;
@@ -272,17 +272,17 @@ pre:has(code.language-mermaid[data-processed="true"]) {
 
 :root {
     --c-radius: 12px;
-    --c-tip: #42b983;
-    --c-tip-bg: #143039;
-    --c-tip-text: #77727a;
-    --c-tip-title: #77727a;
-    --c-warning: #e7c000;
-    --c-warning-bg: #152a43;
-    --c-warning-text: #77727a;
-    --c-warning-title: #77727a;
-    --c-danger: #c00;
-    --c-danger-bg: #492c84a1;
-    --c-danger-text: #77727a;
-    --c-danger-title: #77727a;
+    --c-tip: #25b7bf;
+    --c-tip-bg: #1e6178;
+    --c-tip-text: #eddff5;
+    --c-tip-title: #a7a0ac;
+    --c-warning: #007fe7;
+    --c-warning-bg: #2b60a0;
+    --c-warning-text: #eddff5;
+    --c-warning-title: #eddff5;
+    --c-danger: rgb(85, 0, 204);
+    --c-danger-bg: #5f2cc4a1;
+    --c-danger-text: #decce9;
+    --c-danger-title: #eddff5;
     --font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }

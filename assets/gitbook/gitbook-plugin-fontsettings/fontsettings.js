@@ -135,7 +135,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             return family.config == configName;
         })[0];
         // Fallback to default font family
-        return (!!configFamily)? configFamily.id : 0;
+        return (!!configFamily)? configFamily.id : 1;
     }
 
     // Return the correct id for a theme config key

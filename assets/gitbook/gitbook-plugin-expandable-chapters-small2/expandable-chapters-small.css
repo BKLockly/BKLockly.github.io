@@ -1,3 +1,16 @@
+.book .book-summary {
+  overflow-y: auto; /* 确保内容可以滚动 */
+  height: 100%; /* 确保内容可以滚动 */
+}
+
+.book .book-summary::-webkit-scrollbar {
+  display: none; /* 隐藏滚动条 */
+}
+
+.book .book-summary {
+  scrollbar-width: none; /* 隐藏滚动条（适用于Firefox） */
+}
+
 /* .book .book-summary .chapter > .articles { */
 .book .book-summary .chapter ul {
 	overflow: hidden;
