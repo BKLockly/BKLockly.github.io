@@ -45,7 +45,8 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 
 # Disqus comments
 # disqushandler:            sighingnow
-trackckers
+tracker:
+  51la: true
 
 collections:
   pages:
