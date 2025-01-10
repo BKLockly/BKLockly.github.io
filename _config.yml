@@ -1,5 +1,5 @@
 # Configurations
-title:            介绍 Introduction
+title:            Karlin C2
 longtitle:        Karlin C2
 author:           Lockly
 email:            bk@gmail.com
@@ -22,7 +22,7 @@ toc:
   h_max:   4
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/imgs/icon.ico
+# favicon_path:     /assets/imgs/icon.ico
 
 # markdown render engine.
 markdown:         kramdown
@@ -45,6 +45,7 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 
 # Disqus comments
 # disqushandler:            sighingnow
+trackckers
 
 collections:
   pages:
