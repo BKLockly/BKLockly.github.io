@@ -22,13 +22,13 @@
  */
 .color-theme-2 .dropdown-menu {
   background-color: #14141f;
-  border-color: #272a3a;
+  border-color: #14141f;
 }
 .color-theme-2 .dropdown-menu .dropdown-caret .caret-inner {
-  border-bottom: 9px solid #14141f;
+  border-bottom: 9px solid #181825;
 }
 .color-theme-2 .dropdown-menu .buttons {
-  border-color: #272a3a;
+  border-color: #181825;
 }
 .color-theme-2 .dropdown-menu .button {
   color: #62677f;
@@ -268,7 +268,7 @@
   border: 1px solid transparent;
 }
 .book.color-theme-2 .book-summary ul.summary li.divider {
-  background: #272a3a;
+  background: 14141f;
   box-shadow: none;
 }
 .book.color-theme-2 .book-summary ul.summary li i.fa-check {

@@ -1,5 +1,5 @@
 # Configurations
-title:            Karlin
+title:            介绍 Introduction
 longtitle:        Karlin C2
 author:           Lockly
 email:            bk@gmail.com
@@ -50,16 +50,16 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
-  others:
-    output: true
-    permalink: /:collection/:path/
+  # others:
+  #   output: true
+  #   permalink: /:collection/:path/
 
 ordered_collections:
   - posts
   - pages
   - others
 
-page_width: 1100px
+page_width: 1000px
 
 destination:      ./_site
 incremental:      false

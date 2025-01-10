@@ -273,7 +273,7 @@ pre:has(code.language-mermaid[data-processed="true"]) {
 :root {
     --c-radius: 12px;
     --c-tip: #42b983;
-    --c-tip-bg: #18343e;
+    --c-tip-bg: #143039;
     --c-tip-text: #77727a;
     --c-tip-title: #77727a;
     --c-warning: #e7c000;
