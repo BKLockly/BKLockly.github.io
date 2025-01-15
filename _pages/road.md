@@ -1,4 +1,4 @@
----
+﻿---
 title: 路线规划 Roadmap
 author: Lockly
 date: 2025-01-07
@@ -12,6 +12,10 @@ layout: post
 {: .block-tip }
 
 * [ ] 基本命令
+  * [X] shell
+  * [ ] run
+  * [ ] execute
+  * [ ] drivers
   * [X] cp
   * [X] mv
   * [X] cat
@@ -23,6 +27,9 @@ layout: post
   * [X] pwd
 * [X] execute-assembly(未装载)
 * [ ] unmanaged powershell
+  * [ ] powerpick 
+  * [ ] psinject
+  * [ ] powershell-import
 * [X] 自定义module热加载，必须符合规范，将编译成dll反射执行(未装载)
     * [X] go
     * [X] c/c++
@@ -47,7 +54,19 @@ layout: post
   * [X] windowlist(乱码已修复)
   * [X] whoami(会超时以及乱码已修复)
 * [X] 屏幕截图(screenshot)
-* [X] Hashdump
+* [X] timestomp
+* [X] hashdump
+* [ ] 参数欺骗(argue)
+* [ ] steal_token
+* [ ] make_token
+* [ ] jump
+* [ ] getuid
+* [ ] dllinject
+* [ ] shinject
+* [ ] runu
+* [ ] runas
+* [ ] spwanas
+* [ ] spwan
 * [ ] OPSEC
     * [ ] 堆栈混淆(StackSpoofer)
     * [ ] UDRL
@@ -63,6 +82,10 @@ layout: post
   * [X] 重启
   * [X] 锁屏
   * [X] 自删除
+* 文件操作
+  * [X] 文件浏览
+  * [X] 文件批量上传并修改时间戳
+  * [X] 文件下载
 * 进程操作
   * [ ] 进程迁移(migrate),参考[meetC2](https://github.com/iammaguire/MeetC2)
   * [X] 浏览，终止进程
