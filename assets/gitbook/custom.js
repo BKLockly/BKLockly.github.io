@@ -1,3 +1,9 @@
+/*
+ * @Author: Lockly
+ * @Date: 2025-01-02 19:51:28
+ * @LastEditors: Lockly
+ * @LastEditTime: 2025-01-16 16:08:57
+ */
 // Enable footnote link support for pages with width < 1240.
 //
 function bind_footnote_links() {
