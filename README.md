@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Wiki
-cover: https://karlin.website/wiki/assets/imgs/banner.png
+cover: http://127.0.0.1:4000/wiki/assets/imgs/banner.png
 permalink: /
 ---
 
