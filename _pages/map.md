@@ -54,6 +54,12 @@ layout: post
     * [X] sc_enum(乱码)
     * [X] windowlist(乱码已修复)
     * [X] whoami(会超时以及乱码已修复)
+    * [X] netstat
+    * [X] driversigs
+    * [X] netuptime
+    * [X] regsession
+    * [X] enumlocalsessions
+    * [X] enum_filter_driver
 * [X] 屏幕截图(screenshot)
 * [X] timestomp
 * [X] hashdump
