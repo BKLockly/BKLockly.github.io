@@ -1,0 +1,711 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>05.Agent · Karlin C2</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Lockly">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="04.Client使用.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"BKLockly","repo":"KarlinC2","type":"star","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			<li>
+				<a href="https://www.cnblogs.com/bktown" target="_blank">Blog</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.快速开始.html">
+            
+                <a href="01.快速开始.html">
+            
+                    
+                    01.快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02.Server端.html">
+            
+                <a href="02.Server端.html">
+            
+                    
+                    02.Server端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03.配置项.html">
+            
+                <a href="03.配置项.html">
+            
+                    
+                    03.配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04.Client使用.html">
+            
+                <a href="04.Client使用.html">
+            
+                    
+                    04.Client使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="05.Agent.html">
+            
+                <a href="05.Agent.html">
+            
+                    
+                    05.Agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >05.Agent</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<blockquote>
+<p><strong>[info] &#x6CE8;&#x610F;</strong></p>
+<p>&#x5728;&#x751F;&#x6210;Agent&#x524D;&#x8BF7;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x4E86;&#x76D1;&#x542C;&#x5668;</p>
+</blockquote>
+<h2 id="generation">Generation</h2>
+<p>Agent&#x6709;&#x5F88;&#x591A;&#x529F;&#x80FD;&#x548C;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x53EF;&#x5728;&#x751F;&#x6210;&#x754C;&#x9762;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF1A;
+<br>
+<img src="screenshots/AgentGeneration.png" alt="alt text"></p>
+<p><hr><br></p>
+<h3 id="configuration">Configuration</h3>
+<p>&#x5BF9;&#x4E8E;&#x5176;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x8BF4;&#x660E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B57;&#x6BB5;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
+<th style="text-align:center">&#x53EF;&#x9009;&#x53C2;&#x6570;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Filename</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:center">Platform</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">wiindows/amd64</td>
+<td style="text-align:center">&#x53C2;&#x89C1;<a href="#&#x652F;&#x6301;&#x7684;&#x5E73;&#x53F0;&#x67B6;&#x6784;">&#x652F;&#x6301;&#x7684;&#x5E73;&#x53F0;&#x67B6;&#x6784;</a></td>
+<td style="text-align:center">&#x5E73;&#x53F0;</td>
+</tr>
+<tr>
+<td style="text-align:center">Args</td>
+<td style="text-align:center">[]string</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">&#x53C2;&#x6570;&#xFF08;&#x4FDD;&#x7559;&#x5B57;&#x6BB5;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:center">Sleep</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">&#x4F11;&#x7720;&#x65F6;&#x957F;</td>
+</tr>
+<tr>
+<td style="text-align:center">Jitter</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center">0.2</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">&#x6296;&#x52A8;&#x7CFB;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:center">OutputType</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">exe</td>
+<td style="text-align:center">exe, elf, dll, shellcode</td>
+<td style="text-align:center">&#x8F93;&#x51FA;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">ShellcodeIndex</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">bin</td>
+<td style="text-align:center">py, go. rs, cs, c, ps1</td>
+<td style="text-align:center">shellcode&#x7D22;&#x5F15;</td>
+</tr>
+<tr>
+<td style="text-align:center">Compiler</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">go</td>
+<td style="text-align:center">go, garble</td>
+<td style="text-align:center">&#x7F16;&#x8BD1;&#x5668;</td>
+</tr>
+<tr>
+<td style="text-align:center">UseUpxAndPatcher</td>
+<td style="text-align:center">bool</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">true, false</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x4F7F;&#x7528;upx&#x548C;patcher&#xFF08;&#x4EC5;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:center">CompressorAlgorithm</td>
+<td style="text-align:center">int</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">&#x53C2;&#x89C1;<a href="#&#x538B;&#x7F29;&#x7B97;&#x6CD5;&#x9009;&#x9879;">&#x538B;&#x7F29;&#x7B97;&#x6CD5;&#x9009;&#x9879;</a></td>
+<td style="text-align:center">&#x538B;&#x7F29;&#x7B97;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:center">Stage</td>
+<td style="text-align:center">bool</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">true, false</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E8C;&#x9636;&#x6BB5;Agent</td>
+</tr>
+<tr>
+<td style="text-align:center">ShellcodeUrl</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">shellcode&#x4E0B;&#x8F7D;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td style="text-align:center">LoadMethod</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">AdsMemLoad</td>
+<td style="text-align:center">&#x53C2;&#x89C1;<a href="#&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#x9009;&#x9879;">&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#x9009;&#x9879;</a></td>
+<td style="text-align:center">&#x52A0;&#x8F7D;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:center">BindIcon</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">&#x8BBE;&#x7F6E;&#x56FE;&#x6807;(&#x4E3A;&#x7A7A;&#x4E0D;&#x4F7F;&#x7528;)</td>
+</tr>
+<tr>
+<td style="text-align:center">BindFile</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">&#x6587;&#x4EF6;&#x6346;&#x7ED1;(&#x4E3A;&#x7A7A;&#x4E0D;&#x4F7F;&#x7528;)</td>
+</tr>
+<tr>
+<td style="text-align:center">FakeSign</td>
+<td style="text-align:center">string</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">&#x4F2A;&#x9020;&#x7B7E;&#x540D;(&#x4E3A;&#x7A7A;&#x4E0D;&#x4F7F;&#x7528;)</td>
+</tr>
+<tr>
+<td style="text-align:center">AntiSandBox</td>
+<td style="text-align:center">[]string</td>
+<td style="text-align:center">[BeepSleep, HideWindow]</td>
+<td style="text-align:center">&#x53C2;&#x89C1;<a href="#&#x53CD;&#x6C99;&#x7BB1;&#x9009;&#x9879;">&#x53CD;&#x6C99;&#x7BB1;&#x9009;&#x9879;</a></td>
+<td style="text-align:center">&#x53CD;&#x6C99;&#x7BB1;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="platform">Platform</h3>
+<p>&#x652F;&#x6301;&#x7684;&#x5E73;&#x53F0;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>windows/amd64</li>
+<li>windows/arm64</li>
+<li>linux/amd64</li>
+<li>linux/arm64</li>
+<li>macos/amd64</li>
+<li>macos/arm64
+<hr><br></li>
+</ul>
+<h3 id="compressor">Compressor</h3>
+<p>&#x4F7F;&#x7528;<a href="https://github.com/wabzsy/gonut" target="_blank">gonut</a>&#x8F6C;shellcode, &#x4F7F;&#x7528;<code>-z</code>&#x6765;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#xFF0C;&#x8BE6;&#x7EC6;&#x53EF;&#x4ECE;<a href="https://github.com/wabzsy/gonut/blob/master/README_zh.md" target="_blank">&#x8FD9;&#x91CC;</a>&#x67E5;&#x9605;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5E8F;&#x53F7;</th>
+<th style="text-align:center">&#x9009;&#x9879;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">None</td>
+<td style="text-align:center">&#x4E0D;&#x538B;&#x7F29;</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">aPLib</td>
+<td style="text-align:center">experimental, &#x901F;&#x5EA6;&#x8F83;&#x6162;</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">LZNT1 (RTL)</td>
+<td style="text-align:center">experimental, Windows only</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Xpress (RTL)</td>
+<td style="text-align:center">experimental, Windows only</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">LZNT1</td>
+<td style="text-align:center">experimental</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">Xpress</td>
+<td style="text-align:center">experimental</td>
+</tr>
+</tbody>
+</table>
+<p><hr><br></p>
+<h2 id="loadmethod">LoadMethod</h2>
+<blockquote>
+<p><strong>[danger] &#x1F4A4;</strong></p>
+<p>Will be soon...</p>
+</blockquote>
+<p><hr><br></p>
+<h3 id="antisandbox">AntiSandBox</h3>
+<p><hr><br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x9009;&#x9879;</th>
+<th style="text-align:center">&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">BeepSleep&#x5EF6;&#x65F6;</td>
+<td style="text-align:center">BeepSleep</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x9690;&#x85CF;&#x9ED1;&#x6846;</td>
+<td style="text-align:center">HideWindow</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x662F;&#x5426;&#x5927;&#x4E8E;30&#x5206;&#x949F;</td>
+<td style="text-align:center">BootTime</td>
+</tr>
+<tr>
+<td style="text-align:center">CPU&#x6570;&#x91CF;&#x662F;&#x5426;&#x5927;&#x4E8E;4</td>
+<td style="text-align:center">CPUCount</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x662F;&#x5426;&#x865A;&#x62DF;&#x673A;</td>
+<td style="text-align:center">IsVirtualMachine</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x68C0;&#x6D4B;&#x58C1;&#x7EB8;MD5</td>
+<td style="text-align:center">WallPaperMD5</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x8BED;&#x8A00;&#x662F;&#x5426;&#x4E3A;&#x4E2D;&#x6587;</td>
+<td style="text-align:center">Languages</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x662F;&#x5426;&#x4E3A;&#x5317;&#x4EAC;&#x65F6;&#x95F4;</td>
+<td style="text-align:center">TimeZone</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x684C;&#x9762;&#x6587;&#x4EF6;&#x6570;&#x91CF;&#x662F;&#x5426;&#x5927;&#x4E8E;10</td>
+<td style="text-align:center">DesktopFileCount</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7269;&#x7406;&#x5185;&#x5B58;&#x662F;&#x5426;&#x5927;&#x4E8E;8G</td>
+<td style="text-align:center">PhysicalMemory</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6E90;&#x6587;&#x4EF6;&#x540D;&#x548C;&#x8FDB;&#x7A0B;&#x540D;&#x662F;&#x5426;&#x76F8;&#x540C;</td>
+<td style="text-align:center">ProcessName</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5FAE;&#x4FE1;&#x662F;&#x5426;&#x5B58;&#x5728;</td>
+<td style="text-align:center">Wechat</td>
+</tr>
+<tr>
+<td style="text-align:center">...</td>
+<td style="text-align:center">...</td>
+</tr>
+</tbody>
+</table>
+<p><hr><br></p>
+<h2 id="customer">Customer</h2>
+<h3 id="udrl">UDRL</h3>
+<p>&#x652F;&#x6301;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x529F;&#x80FD;(&#x8981;&#x6C42;&#x7B26;&#x5408;&#x7F16;&#x5199;&#x89C4;&#x8303;), &#x5E76;&#x7F16;&#x8BD1;&#x6210;dll&#x901A;&#x8FC7;sRDI&#x8F6C;&#x5316;&#x4E3A;shellcode&#x5E76;&#x6CE8;&#x5165;&#x5230;&#x727A;&#x7272;&#x8FDB;&#x7A0B;&#x4E2D;&#x53CD;&#x5C04;&#x6267;&#x884C; 
+go&#x8BED;&#x8A00;&#x6A21;&#x677F;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;C&quot;</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span>
+<span class="hljs-comment">// export Hi</span>
+<span class="hljs-keyword">func</span> Hi(v0, v1 *C.char) *C.char {
+    <span class="hljs-keyword">return</span> C.CString(fmt.Sprintf(<span class="hljs-string">&quot;Hi, %s, here is %s&quot;</span>, C.GoString(v0), C.GoString(v1)))
+}
+
+<span class="hljs-keyword">func</span> main() {}
+</code></pre>
+<p>c&#x8BED;&#x8A00;&#x6A21;&#x677F;&#x5982;&#x4E0B;:</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Hi</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *v0, <span class="hljs-keyword">char</span> *v1)</span> </span>{
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hi, %s, here is %s\n&quot;</span>, v0, v1);
+}
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x793A;&#x4F8B;:(&#x52A0;&#x8F7D;mimikatz)
+<br>
+<img src="screenshots/Mimikatz.png" alt="alt text"></p>
+<h3 id="bofcoff">BOF/COFF</h3>
+<p>&#x517C;&#x5BB9;cs&#x7684;bof, &#x53EF;&#x6309;&#x7167;&#x5176;&#x8981;&#x6C42;&#x7F16;&#x5199;bof&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x62D3;&#x5C55;&#x547D;&#x4EE4;&#x5E93;,</p>
+<p>&#x7F16;&#x8BD1;</p>
+<pre><code class="lang-bash">x86_64-w64-mingw32-gcc-8.1.0.exe -c .\Source.c -o timestamp.o -Os -fno-asynchronous-unwind-tables -fno-ident -fpack-struct=8 -falign-functions=1 <span class="hljs-_">-s</span> -ffunction-sections -fdata-sections -fno-exceptions -fno-stack-protector -mno-stack-arg-probe
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#x793A;&#x4F8B;(&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;&#x53EF;&#x8DF3;&#x8F6C;<a href="https://www.cnblogs.com/bktown/p/18658793/bof-writingmodification-time-stamp-zgai05" target="_blank">blog</a>&#x67E5;&#x770B;):
+<br>
+<img src="screenshots/AgentCustomBof.png" alt="self-bof"></p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="https://www.cnblogs.com/bktown" target="_blank">BKLockly</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x66F4;&#x65B0;&#x65F6;&#x95F4;&#xFF1A; 2025-01-21 23:49:27 </span> </footer>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="04.Client使用.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 04.Client使用">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"05.Agent","level":"1.6","depth":1,"previous":{"title":"04.Client使用","level":"1.5","depth":1,"path":"04.Client使用.md","ref":"04.Client使用.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-fexa","alerts","back-to-top-button","custom-favicon","expandable-chapters","github-buttons","code","page-footer-ex","-lunr","-search","search-pro","hide-element","donate","splitter","github","-sharing","sharing-plus","auto-scroll-table","flexible-alerts","livereload"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/BKLockly"},"livereload":{},"page-footer-ex":{"copyright":"By [BKLockly](https://www.cnblogs.com/bktown)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"更新时间："},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"theme-fexa":{"search-placeholder":"所寻何物","logo":"./assets/imgs/logo.png","favicon":"./assets/imgs/favicon.ico"},"code":{"copyButtons":true},"donate":{"alipay":"","alipayText":"支付宝捐赠","button":"赏","title":"","wechat":"","wechatText":"微信捐赠"},"hide-element":{"elements":[".gitbook-link",".treeview__copyright",".treeview__main-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"./favicon.ico","back-to-top-button":{},"alerts":{},"github-buttons":{"buttons":[{"user":"BKLockly","repo":"KarlinC2","type":"star","size":"small"}]},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"qq":false,"all":["douban","facebook","google","hatenaBookmark","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","vk","weibo","pocket","stumbleupon","whatsapp"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Lockly","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"nav":[{"url":"https://www.cnblogs.com/bktown","target":"_blank","name":"Blog"}]}},"title":"Karlin C2","language":"zh-hans","gitbook":"*","description":"C2 Framework"},"file":{"path":"05.Agent.md","mtime":"2025-01-21T15:49:27.923Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-22T03:35:11.941Z"},"basePath":".","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+
