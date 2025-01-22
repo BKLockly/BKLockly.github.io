@@ -1,3 +1,9 @@
+/*
+ * @Author: Lockly
+ * @Date: 2025-01-22 11:35:13
+ * @LastEditors: Lockly
+ * @LastEditTime: 2025-01-22 12:09:17
+ */
 body {
   font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "\9ED1\4F53", Arial, sans-serif;
   letter-spacing: .2px;
@@ -22,9 +28,6 @@ body {
   box-sizing: border-box;
   box-shadow: 0 0 2px #dcdcdc9e;
   margin-top: 14px;
-  margin-left: 10px;
-  margin-right: 10px;
-  max-width: 95%;
 }
 .markdown-section img:hover {
   box-shadow: 0 0 10px #bbb

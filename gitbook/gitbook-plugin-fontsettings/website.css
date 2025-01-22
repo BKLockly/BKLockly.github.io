@@ -1,4 +1,10 @@
 /*
+ * @Author: Lockly
+ * @Date: 2025-01-22 11:35:13
+ * @LastEditors: Lockly
+ * @LastEditTime: 2025-01-22 12:08:36
+ */
+/*
  * Theme 1
  */
 .color-theme-1 .dropdown-menu {
@@ -21,11 +27,11 @@
  * Theme 2
  */
 .color-theme-2 .dropdown-menu {
-  background-color: #2d3143;
+  background-color: #14141f;
   border-color: #272a3a;
 }
 .color-theme-2 .dropdown-menu .dropdown-caret .caret-inner {
-  border-bottom: 9px solid #2d3143;
+  border-bottom: 9px solid #14141f;
 }
 .color-theme-2 .dropdown-menu .buttons {
   border-color: #272a3a;
@@ -53,10 +59,10 @@
 }
 .book.color-theme-2 .book-body {
   color: #bdcadb;
-  background: #1c1f2b;
+  background: #181825;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section {
-  background: #1c1f2b;
+  background: #181825;
 }
 .book.font-size-0 .book-body .page-inner section {
   font-size: 1.2rem;
@@ -157,8 +163,8 @@
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
   color: #9dbed8;
-  background: #2d3143;
-  border-color: #2d3143;
+  background: #14141f;
+  border-color: #14141f;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .highlight {
   background-color: #282a39;
@@ -169,7 +175,7 @@
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal table tr {
   color: #b6c2d2;
-  background-color: #2d3143;
+  background-color: #14141f;
   border-color: #3b3f54;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
@@ -257,7 +263,7 @@
  */
 .book.color-theme-2 .book-summary {
   color: #bcc1d2;
-  background: #2d3143;
+  background: #14141f;
   border-right: none;
 }
 .book.color-theme-2 .book-summary .book-search {

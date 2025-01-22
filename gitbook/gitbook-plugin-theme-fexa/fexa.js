@@ -1,3 +1,9 @@
+/*
+ * @Author: Lockly
+ * @Date: 2025-01-22 11:35:13
+ * @LastEditors: Lockly
+ * @LastEditTime: 2025-01-22 12:54:21
+ */
 require(['gitbook', 'jquery'], function(gitbook, $) {
 
     function getRootPath() {
@@ -52,7 +58,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
         //搜索框
         var $search = $('#book-search-input');
-        var placeholder = gitbook.state.config.pluginsConfig["theme-fexa"]["search-placeholder"] || "输入关键字搜索"
+        var placeholder = ""
         $search.find("input").attr("placeholder",placeholder);
         $search.append("<span id='searchBtn'>搜索</span>");
         $search.focus();

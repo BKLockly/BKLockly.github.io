@@ -1,16 +1,22 @@
+/*
+ * @Author: Lockly
+ * @Date: 2025-01-22 11:35:13
+ * @LastEditors: Lockly
+ * @LastEditTime: 2025-01-22 12:58:09
+ */
 .page-footer-ex {
     margin-top: 50px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #b1bfd2;
     overflow: hidden;
     padding: 10px 0;
     font-size: 12px;
-    color: #808080;
+    color: #b1bfd2;
 }
 .page-footer-ex-copyright {
     display: inline-block;
 }
 .page-footer-ex a {
-    color: #808080 !important;
+    color: #b1bfd2 !important;
     text-decoration: underline !important;
 }
 .page-footer-ex-footer-update {
