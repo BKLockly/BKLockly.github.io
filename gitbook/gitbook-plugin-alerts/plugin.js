@@ -1,3 +1,9 @@
+/*
+ * @Author: Lockly
+ * @Date: 2025-02-05 18:34:33
+ * @LastEditors: Lockly
+ * @LastEditTime: 2025-02-05 18:54:59
+ */
 // script to style blockquotes for info, warning, success and danger
 
 styleMap = {

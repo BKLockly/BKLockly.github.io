@@ -1,27 +1,36 @@
+/*
+ * @Author: Lockly
+ * @Date: 2025-02-05 18:34:33
+ * @LastEditors: Lockly
+ * @LastEditTime: 2025-02-05 19:02:44
+ */
 .info {
-    background: #eff5ff;
+    background: #143039;
     border-color: #42acf3;
     color: #444;
 }
 .info strong {
-    color: #42acf3;
+    color: #c5ebf8;
 }
+
 .warning {
-    background: #fcf8f2;
-    border-color: #f0ad4e;
-    color: #444;
+    background: #4f4285;
+    border-color: #4f4285;
+    color: #3d314f;
 }
 .warning strong {
-    color: #f0ad4e;
+    color: #7b46e5;
 }
+
 .danger {
-    background: #fdf7f7;
-    border-color: #d9534f;
-    color: #444;
+    background: rgba(75, 67, 208, 0.51);
+    border-color: #5446d2;
+    color: #38296c;
 }
 .danger strong {
-    color: #d9534f;
+    color: #8074ea;
 }
+
 .success {
     background: #f3f8f3;
     border-color: #50af51;
