@@ -1,8 +1,8 @@
 /*
  * @Author: Lockly
- * @Date: 2025-01-22 11:35:13
+ * @Date: 2025-02-05 18:56:46
  * @LastEditors: Lockly
- * @LastEditTime: 2025-01-22 12:56:07
+ * @LastEditTime: 2025-02-05 20:09:34
  */
 .book .book-body .page-wrapper .page-inner section.normal pre,
 .book .book-body .page-wrapper .page-inner section.normal code {
@@ -64,13 +64,13 @@
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-params,
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-constant,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-constant {
-  color: #f5871f;
+  color: #1f83f5;
 }
 .book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-class .hljs-title,
 .book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-class .hljs-title,
 .book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-rules .hljs-attribute,
 .book .book-body .page-wrapper .page-inner section.normal code .css .hljs-rules .hljs-attribute {
-  color: #eab700;
+  color: #00b3ea;
 }
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-string,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-string,
@@ -255,7 +255,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code .haskell .hljs-type,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre .hljs-link_reference,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code .hljs-link_reference {
-  color: #b58900;
+  color: #0a78c7;
 }
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre .hljs-preprocessor,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code .hljs-preprocessor,
@@ -285,7 +285,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code .css .hljs-pseudo,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre .hljs-header,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code .hljs-header {
-  color: #cb4b16;
+  color: #16b0cb;
 }
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre .hljs-deletion,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code .hljs-deletion,
@@ -363,13 +363,13 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .hljs-params,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .hljs-constant,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .hljs-constant {
-  color: #e78c45;
+  color: #286383;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-class .hljs-title,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-class .hljs-title,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .css .hljs-rules .hljs-attribute,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .css .hljs-rules .hljs-attribute {
-  color: #e7c547;
+  color: #4774e7;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .hljs-string,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .hljs-string,
@@ -385,7 +385,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata {
-  color: #b9ca4a;
+  color: #4a81ca;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .css .hljs-hexcolor,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .css .hljs-hexcolor {
@@ -413,7 +413,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .hljs-keyword,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .javascript .hljs-function,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .javascript .hljs-function {
-  color: #c397d8;
+  color: #97ccd8;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre .hljs,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code .hljs {
