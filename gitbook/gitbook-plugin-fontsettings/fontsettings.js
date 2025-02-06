@@ -2,7 +2,7 @@
  * @Author: Lockly
  * @Date: 2025-01-22 11:35:13
  * @LastEditors: Lockly
- * @LastEditTime: 2025-01-22 12:56:07
+ * @LastEditTime: 2025-02-06 12:27:14
  */
 require(['gitbook', 'jquery'], function(gitbook, $) {
     // Configuration
@@ -23,7 +23,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         {
             config: 'night',
             text: 'Night',
-            id: 1
+            id: 2
         }
     ];
 
@@ -138,7 +138,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             return theme.config == configName;
         })[0];
         // Fallback to default theme
-        return (!!configTheme)? configTheme.id : 1;
+        return (!!configTheme)? configTheme.id : 2;
     }
 
     function update() {
