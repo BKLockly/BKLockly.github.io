@@ -2,7 +2,7 @@
  * @Author: Lockly
  * @Date: 2025-01-22 11:35:13
  * @LastEditors: Lockly
- * @LastEditTime: 2025-02-06 12:27:14
+ * @LastEditTime: 2025-02-11 20:48:01
  */
 require(['gitbook', 'jquery'], function(gitbook, $) {
     // Configuration
@@ -160,13 +160,12 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     function init(config) {
         // Search for plugin configured font family
         var configFamily = getFontFamilyId(config.family),
-            configTheme = getThemeId(config.theme);
 
         // Instantiate font state object
         fontState = gitbook.storage.get('fontState', {
             size:   config.size || 2,
             family: configFamily,
-            theme:  configTheme
+            theme:  2
         });
 
         update();
