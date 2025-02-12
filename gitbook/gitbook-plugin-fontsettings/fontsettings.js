@@ -1,8 +1,8 @@
 /*
  * @Author: Lockly
- * @Date: 2025-01-22 11:35:13
+ * @Date: 2025-02-10 19:05:10
  * @LastEditors: Lockly
- * @LastEditTime: 2025-02-11 20:48:01
+ * @LastEditTime: 2025-02-12 10:46:35
  */
 require(['gitbook', 'jquery'], function(gitbook, $) {
     // Configuration
@@ -20,6 +20,11 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             text: 'White',
             id: 0
         },
+        // {
+        //     config: 'sepia',
+        //     text: 'Sepia',
+        //     id: 1
+        // },
         {
             config: 'night',
             text: 'Night',
@@ -160,12 +165,13 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     function init(config) {
         // Search for plugin configured font family
         var configFamily = getFontFamilyId(config.family),
+            configTheme = getThemeId(config.theme);
 
         // Instantiate font state object
         fontState = gitbook.storage.get('fontState', {
             size:   config.size || 2,
             family: configFamily,
-            theme:  2
+            theme:  configTheme || 2
         });
 
         update();
